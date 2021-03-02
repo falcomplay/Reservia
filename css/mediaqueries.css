@@ -1,8 +1,6 @@
 @media (max-width: 375px) {
     body {
         margin: 0;
-        padding: 0;
-        width: 100%;
     }
 
     /* Header */
@@ -29,6 +27,8 @@
     }
     header img {
         margin-left: 20px;
+        margin-top: 12px;
+        height: 50px;
     }
     nav ul {
         margin: 0 35px;
@@ -39,5 +39,151 @@
     }
     #stripe {
         margin-top: 10px;
-        border-bottom: 3px #f2f2f2 solid;
+        border-bottom: 3px solid #f2f2f2;
     }
+
+    /* Search and filters */
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    #search_filters {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+        width: 330px;
+    }
+    #search_button {
+        width: 48px ;
+        height: 48px;
+        margin-left: -25px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    #lookforbar {
+        margin-left: 5px;
+    }
+    #lookforbar input {
+        padding-right: 30px;
+    }
+    #search_button img {
+        display: inline;
+        margin-top: 5px;
+        height: 16px;
+    }
+    #search_button span {
+        display: none;
+    }
+    h2 {
+        align-self: start;
+        margin-left: 2px;
+        margin-bottom: 8px;
+    }
+    #filter {
+        flex-direction:column;
+    }
+    #input_filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 12px;
+    }
+    #filter label {
+        margin: 7px;
+        font-size: 16px;
+    }
+    #iline {
+        align-items: flex-start;
+    }
+    #iline img {
+        height: 10px;
+    }
+    #iline p {
+        margin-top: 5px;
+        width: 330px;
+    }
+
+    /* Main */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Popular section */
+    
+    #popular {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Main section (accomodation)*/
+
+    #main {
+        padding: 0;
+        margin: 0;
+        background: none;
+    }
+    .section_row {
+        display: flex;
+        flex-direction: column;
+    }
+    .propmain {
+        margin: 0 0 15px 10px;
+        width: 95%;
+    }
+    .contain_img_accomodation {
+        width: 98%;
+    }
+
+    /* Activity section */
+
+    #activity { 
+        margin: auto;
+        margin-top: 830px;
+        width: 330px;
+    }
+
+    /* margin top a revoir */
+
+    #activity_contain {
+        display: flex;
+        flex-direction: column; 
+        align-content: center;
+        width: 100%;
+    }
+    .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
+        height: 190px;
+        margin-top: 20px;
+    }
+    #activity_large1, #activity_large2, #activity1, #activity2, #activity3, #activity4 {
+        width: 100%;
+        height: 130px;
+    }
+    #activity img {
+        width: 100%;
+        object-fit: cover;
+        left: 0; bottom: 0; right: 0; top: 0;
+        margin: auto;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 760px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer ul {
+        margin-left: 0;
+    }
+    footer h5 {
+        margin-bottom: 10px;
+    }
+    footer nav{
+        margin-bottom: 50px;
+    }
+}
+
+/* Media queries tablette + petit écran desktop à venir */ 
+
