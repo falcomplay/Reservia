@@ -1,0 +1,43 @@
+@media (max-width: 375px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Header */
+
+    header {
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+    #header_desktop {
+        display: none;
+    }
+    header li {
+        margin: 0;
+        padding: 0;
+    }
+    #header_responsive {
+        display: flex;
+        flex-direction: column;
+    }
+    #register {
+        display: flex;
+        justify-content: space-between;
+    }
+    header img {
+        margin-left: 20px;
+    }
+    nav ul {
+        margin: 0 35px;
+        padding: 0;
+    }
+    header ul li a::before, header ul li a::after {
+        top: 30px;
+    }
+    #stripe {
+        margin-top: 10px;
+        border-bottom: 3px #f2f2f2 solid;
+    }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family:'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header */
+
+#header_responsive {
+    display: none;
+}
+#header_desktop {
+    top: 0;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    background: white;
+    justify-content: space-between;
+}
+header img {
+    margin-left: 50px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header a {
+    margin: 30px;
+    text-decoration: none;
+}
+header span {
+    color:#0065FC;
+    font-weight: 800;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    will-change: color;
+    transition: color .25s ease-out;  
+}
+header ul li a::before, header ul li a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #0065FC ;
+  will-change: width;
+  transition: width .2s ease-out;
+  position: absolute;
+  top: -30px;
+}
+header ul li a::before{
+    left: 50%;
+    transform: translateX(-50%); 
+}
+header ul li a::after{
+    right: 50%;
+    transform: translateX(50%); 
+}
+header ul li a:hover{
+    color: #0065FC;
+}
+header ul li a:hover::before, header ul li a:hover::after{
+    width: 150px;
+    transition-duration: .3s;
+}
