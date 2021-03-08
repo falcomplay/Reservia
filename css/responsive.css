@@ -3,7 +3,9 @@
         width: auto;
         vertical-align: middle;
     }
-    
+    figcaption {
+        font-size: 16px;
+    }
     /* Header */
 
     header {
@@ -11,16 +13,19 @@
         padding: 0;
         width: 100%;
     }
-    #header_desktop {
-        display: none;
+    header img {
+        margin-bottom: 10px;
+        height: 45px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
     }
     header li {
         margin: 0;
         padding: 0;
-    }
-    #header_responsive {
-        display: flex;
-        flex-direction: column;
     }
     #register {
         display: flex;
@@ -28,7 +33,6 @@
     }
     header img {
         margin-left: 20px;
-        margin-top: 12px;
         height: 50px;
     }
     header nav ul {
@@ -36,14 +40,15 @@
         padding: 0;
         width: 100%;
         display: flex;
+        order: 3;
         flex-direction: row;
         justify-content: space-around;
     }
     header ul li {
         width: 50%;
         border-bottom: #f2f2f2 2px solid;
-        padding-bottom: 20px;
-        ;    
+        padding-bottom: 12px;
+        text-align: center;    
     }
     header ul :hover {
         border-bottom: #0065fc 2px solid;
@@ -57,14 +62,19 @@
     /* Search and filters */
 
     h1 {
-        margin-top: 30px;
-        margin-bottom: 5px;
+        font-size: 20px;
+        width: 90%;
+        margin-left: 5px;
+    }
+    #search_filters p {
+        margin-left: 5px;
     }
     #search_filters {
-        display: flex;
+        margin: 10px 0 0 20px;
         flex-direction: column;
-        margin: 0 auto;
         width: 95%;
+        margin: auto;
+        margin-top: 30px;
     }
     #search_button {
         width: 48px ;
@@ -73,10 +83,10 @@
         border-radius: 15px 15px 15px 15px;
     }
     #lookforbar {
-        margin-left: 5px;
+        margin-top: 25px;
     }
     #lookforbar input {
-        padding-right: 30px;
+        padding-right: 0;
     }
     #search_button img {
         display: inline;
@@ -117,10 +127,13 @@
         margin-top: 5px;
         width: 330px;
     }
+    #framei {
+        width: 30px;
+    }
 
-     /* Main */
+    /* Main */
 
-     main {
+    main {
         display: flex;
         flex-direction: column;
     }
@@ -129,55 +142,63 @@
     
     #popular {
         padding: 0;
-        margin: 0;
-        width: 100%;
-    }
+        margin: auto;
+        width: 98%;
+    }   
     #title_popular {
-        max-width: 290px;
+        width: 280px;
     }
     .frame_popular {
         width: 95%;
     }
-
     /* Main section (accomodation)*/
 
     #main {
-        display: block;
-        width: 100%;
         padding: 0;
-        margin: 0;
+        margin: auto;
+        width: 98%;
         background: none;
     }
-    .frame_main {
-        width: 92%;
-        margin: 0 auto 15px auto;
+    #main h3 {
+        font-size: 22px;
+        margin: 30px auto 0 auto;
+    }
+    #main figcaption {
+        margin-top: 10px;
     }
     .section_row {
         display: flex;
         flex-direction: column;
     }
+    .frame_main {
+        margin: 15px auto;
+    }
+    .propmain {
+        margin: 0 0 15px 10px;
+        width: 95%;
+    }
     .contain_img_accomodation {
         width: 98%;
     }
     #show_more {
-        padding-left: 10px;
+        margin-left: 10px;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 830px;
+        margin-top: 900px;
         width: 90%;
     }
-
-    /* margin top a revoir */
-
+    #activity figcaption {
+        margin-bottom: 3%;
+        margin-left: 15px;
+    }
     #activity_contain {
         display: flex;
         flex-direction: column; 
         align-content: center;
         width: 100%;
-        height: auto;
     }
     .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
         height: 190px;
@@ -193,14 +214,11 @@
         left: 0; bottom: 0; right: 0; top: 0;
         margin: auto;
     }
-    #activity figcaption {
-        margin-top: 15px;
-    }
 
     /* Footer */
 
     footer {
-        margin-top: 50px;
+        margin-top: 720px;
         display: flex;
         flex-direction: column;
     }
@@ -211,54 +229,8 @@
         margin-bottom: 10px;
     }
     footer nav{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    body {
-        width: auto;
-        margin: 0 auto;
-        font-size: 26px;
-    }
-
-    #blockbody {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    
-    /* Header */
-
-    header img {
-        height: 80px;
-    }
-
-    /* Search and filters */
-
-#search_filters {
-    margin-top: 100px;
-}
-
-/* Main */
-
-main {
-    width: 100%;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-}
-/* Popular section */ 
-
-#popular {
-    margin-left: 0;
-}
-/* footer */
-footer nav {
-    margin-left: 60px;
 }
 @media (min-width: 375px) and (max-width: 767px) {
     body {
@@ -272,16 +244,15 @@ footer nav {
         padding: 0;
         width: 100%;
     }
-    #header_desktop {
-        display: none;
+    header nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
     }
     header li {
         margin: 0;
         padding: 0;
-    }
-    #header_responsive {
-        display: flex;
-        flex-direction: column;
     }
     #register {
         display: flex;
@@ -289,7 +260,6 @@ footer nav {
     }
     header img {
         margin-left: 20px;
-        margin-top: 12px;
         height: 50px;
     }
     header nav ul {
@@ -297,14 +267,16 @@ footer nav {
         padding: 0;
         width: 100%;
         display: flex;
+        order: 3;
+        margin-top: 15px;
         flex-direction: row;
         justify-content: space-around;
     }
     header ul li {
         width: 50%;
         border-bottom: #f2f2f2 2px solid;
-        padding-bottom: 20px;
-        ;    
+        padding-bottom: 15px;
+        text-align: center;    
     }
     header ul :hover {
         border-bottom: #0065fc 2px solid;
@@ -325,7 +297,7 @@ footer nav {
         display: flex;
         flex-direction: column;
         margin: 0 0 0 20px;
-        width: 330px;
+        width: 90%;
     }
     #search_button {
         width: 48px ;
@@ -386,52 +358,63 @@ footer nav {
     
     #popular {
         padding: 0;
-        margin: 0;
-        width: 100%;
+        margin: auto;
+        width: 98%;
+    }   
+    #title_popular {
+        width: 320px;
     }
     .frame_popular {
         width: 95%;
     }
-
     /* Main section (accomodation)*/
 
     #main {
-        display: block;
-        width: 100%;
         padding: 0;
-        margin: 0;
+        margin: auto;
+        width: 98%;
         background: none;
     }
-    .frame_main {
-        width: 92%;
-        margin: 0 auto 15px auto;
+    #main h3 {
+        font-size: 22px;
+        margin: 30px auto 0 auto;
+    }
+    #main figcaption {
+        margin-top: 10px;
     }
     .section_row {
         display: flex;
         flex-direction: column;
     }
+    .frame_main {
+        margin: 15px auto;
+    }
+    .propmain {
+        margin: 0 0 15px 10px;
+        width: 95%;
+    }
     .contain_img_accomodation {
         width: 98%;
     }
     #show_more {
-        padding-left: 10px;
+        margin-left: 10px;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 830px;
+        margin-top: 900px;
         width: 90%;
     }
-
-    /* margin top a revoir */
-
+    #activity figcaption {
+        margin-bottom: 3%;
+        margin-left: 15px;
+    }
     #activity_contain {
         display: flex;
         flex-direction: column; 
         align-content: center;
         width: 100%;
-        height: auto;
     }
     .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
         height: 190px;
@@ -447,14 +430,11 @@ footer nav {
         left: 0; bottom: 0; right: 0; top: 0;
         margin: auto;
     }
-    #activity figcaption {
-        margin-top: 15px;
-    }
 
     /* Footer */
 
     footer {
-        margin-top: 50px;
+        margin-top: 770px;
         display: flex;
         flex-direction: column;
     }
@@ -465,11 +445,204 @@ footer nav {
         margin-bottom: 10px;
     }
     footer nav{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    
+@media (min-width: 768px) and (max-width: 1024px) {
    
+    /* Search and filters */
+
+    h1 {
+        margin-top: 80px;
+        margin-bottom: 5px;
+    }
+    #search_filters {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+        width: 90%;
+    }
+    #search_button {
+        width: 48px ;
+        height: 48px;
+        margin-left: -25px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    #lookforbar {
+        margin-left: 5px;
+    }
+    #lookforbar input {
+        padding-right: 30px;
+    }
+    #search_button img {
+        display: inline;
+        margin-top: 5px;
+        height: 16px;
+    }
+    #search_button span {
+        display: none;
+    }
+    h2 {
+        align-self: start;
+        margin-left: 2px;
+        margin-bottom: 8px;
+    }
+    #filter {
+        flex-direction:column;
+    }
+    #input_filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 12px;
+    }
+    #filter label {
+        margin: 7px;
+        font-size: 16px;
+    }
+    #iline {
+        align-items: flex-start;
+    }
+    #iline img {
+        height: 10px;
+    }
+    #iline p {
+        margin-top: 5px;
+    }
+
+    /* Main */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Popular section */
+    
+    #popular {
+        padding: 0;
+        margin: auto;
+        width: 98%;
+        max-width: 80%;
+    }   
+    #title_popular {
+        width: 90%;
+    }
+    .frame_popular {
+        width: 95%;
+    }
+    .description_popular {
+        width: 90%;
+    }
+    #popular figcaption {
+        margin-top: 4%;
+        max-width: 90%;
+        font-size: 20px;
+    }
+    #popular p {
+        font-size: 18px;
+    }
+    #popular .ranking {
+        width: 16px;
+    }
+    /* Main section (accomodation)*/
+
+    #main {
+        padding: 0;
+        margin: auto;
+        margin-top: 20px;
+        width: 98%;
+        height: 610px;
+    }
+    #main h3 {
+        font-size: 22px;
+        margin: 30px auto 0 auto;
+    }
+    #main figcaption {
+        margin-top: 10px;
+    }
+    .frame_main {
+        margin: 15px auto;
+        width: 30%;
+    }
+    .propmain {
+        margin: 0 0 15px 10px;
+        width: 95%;
+    }
+    .contain_img_accomodation {
+        width: 98%;
+    }
+    #main span {
+        margin-top: 30px;
+    }
+    /* Activity section */
+
+    #activity { 
+        margin: auto;
+        width: 90%;
+    }
+    #activity figcaption {
+        margin-bottom: 3%;
+        margin-left: 15px;
+    }
+    #activity_contain {
+        display: flex;
+        flex-direction: column; 
+        align-content: center;
+        width: 100%;
+    }
+    .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
+        height: 190px;
+        margin-top: 20px;
+    }
+    #activity_large1, #activity_large2, #activity1, #activity2, #activity3, #activity4 {
+        width: 100%;
+        height: 130px;
+    }
+    #activity img {
+        width: 100%;
+        object-fit: cover;
+        left: 0; bottom: 0; right: 0; top: 0;
+        margin: auto;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 880px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul {
+        margin-left: 0;
+        text-align: center;
+    }
+    footer h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+    footer ul li a{
+        font-size: 20px;
+    }
+    footer nav{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1244px) {
+    figcaption:not(#activity *) {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    #popular figcaption {
+        margin-top: 20px;
+    }
+    .description_popular p, .frame_main p{
+        font-size: 13px;
+    }
+    footer nav {
+        margin-left: 15%;
+        margin-right: 0;
+    }
 }
