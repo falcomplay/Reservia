@@ -146,22 +146,34 @@
         width: 98%;
     }   
     #title_popular {
-        width: 280px;
+        width: 270px;
+    }
+    #title_popular h3 {
+        font-size: 20px;
+    }
+    #popular h4 {
+        font-size: 16px;
+        width: 90%;
     }
     .frame_popular {
         width: 95%;
     }
+
     /* Main section (accomodation)*/
 
     #main {
-        padding: 0;
         margin: auto;
         width: 98%;
         background: none;
+        margin-top: 380px;
     }
     #main h3 {
         font-size: 22px;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 20px auto;
+    }
+    #main a {
+        width: 98%;
+        margin-bottom: 10px;
     }
     #main figcaption {
         margin-top: 10px;
@@ -177,18 +189,19 @@
         margin: 0 0 15px 10px;
         width: 95%;
     }
-    .contain_img_accomodation {
-        width: 98%;
-    }
     #show_more {
-        margin-left: 10px;
+        margin-left: 20px;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 900px;
+        margin-top: 410px;
         width: 90%;
+    }
+    #activity h4 {
+        margin-top: 10px;
+        font-size: 20px;
     }
     #activity figcaption {
         margin-bottom: 3%;
@@ -212,13 +225,12 @@
         width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
-        margin: auto;
     }
 
     /* Footer */
 
     footer {
-        margin-top: 720px;
+        margin-top: 840px;
         display: flex;
         flex-direction: column;
     }
@@ -370,14 +382,18 @@
     /* Main section (accomodation)*/
 
     #main {
-        padding: 0;
         margin: auto;
         width: 98%;
         background: none;
+        margin-top: 380px;
     }
     #main h3 {
         font-size: 22px;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 20px auto;
+    }
+    #main a {
+        width: 98%;
+        margin-bottom: 10px;
     }
     #main figcaption {
         margin-top: 10px;
@@ -393,18 +409,19 @@
         margin: 0 0 15px 10px;
         width: 95%;
     }
-    .contain_img_accomodation {
-        width: 98%;
-    }
     #show_more {
-        margin-left: 10px;
+        margin-left: 20px;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 900px;
+        margin-top: 410px;
         width: 90%;
+    }
+    #activity h4 {
+        margin-top: 15px;
+        font-size: 20px;
     }
     #activity figcaption {
         margin-bottom: 3%;
@@ -428,13 +445,12 @@
         width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
-        margin: auto;
     }
 
     /* Footer */
 
     footer {
-        margin-top: 770px;
+        margin-top: 840px;
         display: flex;
         flex-direction: column;
     }
@@ -456,12 +472,16 @@
     h1 {
         margin-top: 80px;
         margin-bottom: 5px;
+        font-size: 24px;
     }
     #search_filters {
         display: flex;
         flex-direction: column;
         margin: 0 0 0 20px;
         width: 90%;
+    }
+    #search_filters p {
+        font-size: 20px;
     }
     #search_button {
         width: 48px ;
@@ -487,6 +507,7 @@
         align-self: start;
         margin-left: 2px;
         margin-bottom: 8px;
+        font-size: 22px;
     }
     #filter {
         flex-direction:column;
@@ -508,6 +529,7 @@
     }
     #iline p {
         margin-top: 5px;
+        font-size: 18px;
     }
 
     /* Main */
@@ -523,10 +545,16 @@
         padding: 0;
         margin: auto;
         width: 98%;
-        max-width: 80%;
     }   
+    #popular h3 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
     #title_popular {
-        width: 90%;
+        width: 80%;
+    }
+    #popular h4 {
+        font-size: 24px;
     }
     .frame_popular {
         width: 95%;
@@ -535,12 +563,11 @@
         width: 90%;
     }
     #popular figcaption {
-        margin-top: 4%;
         max-width: 90%;
         font-size: 20px;
     }
     #popular p {
-        font-size: 18px;
+        font-size: 22px;
     }
     #popular .ranking {
         width: 16px;
@@ -555,11 +582,20 @@
         height: 610px;
     }
     #main h3 {
-        font-size: 22px;
+        font-size: 32px;
         margin: 30px auto 0 auto;
     }
     #main figcaption {
         margin-top: 10px;
+    }
+    #main h4 {
+        margin-left: 2px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    #main p {
+        margin-left: 2px;
+        font-size: 16px;
     }
     .frame_main {
         margin: 15px auto;
@@ -569,11 +605,8 @@
         margin: 0 0 15px 10px;
         width: 95%;
     }
-    .contain_img_accomodation {
-        width: 98%;
-    }
     #main span {
-        margin-top: 30px;
+        margin-top: 10px;
     }
     /* Activity section */
 
@@ -584,6 +617,15 @@
     #activity figcaption {
         margin-bottom: 3%;
         margin-left: 15px;
+    }
+    #activity a {
+        width: 100%;
+    }
+    #activity h3 {
+        font-size: 32px;
+    }
+    #activity h4 {
+        font-size: 28px;
     }
     #activity_contain {
         display: flex;
@@ -603,7 +645,7 @@
         width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
-        margin: auto;
+        margin: 0;
     }
 
     /* Footer */
@@ -618,7 +660,7 @@
         margin-left: 0;
         text-align: center;
     }
-    footer h4 {
+    footer h5 {
         font-size: 24px;
         text-align: center;
     }
@@ -630,19 +672,8 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1244px) {
-    figcaption:not(#activity *) {
+@media (min-width: 1025px) and (max-width: 1100px) {
+    h4:not(#activity *) {
         font-size: 14px;
-        margin-top: 15px;
-    }
-    #popular figcaption {
-        margin-top: 20px;
-    }
-    .description_popular p, .frame_main p{
-        font-size: 13px;
-    }
-    footer nav {
-        margin-left: 15%;
-        margin-right: 0;
     }
 }
