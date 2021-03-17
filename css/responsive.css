@@ -1,8 +1,4 @@
 @media (max-width:374px){
-    body {
-        width: auto;
-        vertical-align: middle;
-    }
     figcaption {
         font-size: 16px;
     }
@@ -59,6 +55,7 @@
     header ul li a::before, header ul li a::after {
         display: none;
     }
+    
     /* Search and filters */
 
     h1 {
@@ -143,7 +140,8 @@
     #popular {
         padding: 0;
         margin: auto;
-        width: 98%;
+        width: 99%;
+        border-radius: 0;
     }   
     #title_popular {
         width: 270px;
@@ -153,27 +151,37 @@
     }
     #popular h4 {
         font-size: 16px;
-        width: 90%;
+        width: 95%;
+    }
+    #popular p {
+        font-size: 12px;
     }
     .frame_popular {
         width: 95%;
+    }
+    .contain_img_popular img {
+        width: 40%;
+    }
+    #popular .ranking {
+        left: 45%;
     }
 
     /* Main section (accomodation)*/
 
     #main {
         margin: auto;
-        width: 98%;
+        width: 90%;
         background: none;
-        margin-top: 380px;
+        border: none;
+        margin-top: 390px;
     }
     #main h3 {
         font-size: 22px;
-        margin: 30px auto 20px auto;
+        margin: 50px 0 20px 0;
     }
     #main a {
-        width: 98%;
-        margin-bottom: 10px;
+        width: 100%;
+        margin-bottom: 15px;
     }
     #main figcaption {
         margin-top: 10px;
@@ -181,6 +189,9 @@
     .section_row {
         display: flex;
         flex-direction: column;
+    }
+    .section_row a {
+        padding: 0;
     }
     .frame_main {
         margin: 15px auto;
@@ -190,18 +201,21 @@
         width: 95%;
     }
     #show_more {
-        margin-left: 20px;
+        margin-left: 0;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 410px;
+        margin-top: 440px;
         width: 90%;
     }
     #activity h4 {
         margin-top: 10px;
         font-size: 20px;
+    }
+    .activity_frame {
+        margin-bottom: 15px;
     }
     #activity figcaption {
         margin-bottom: 3%;
@@ -215,22 +229,20 @@
     }
     .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
         height: 190px;
-        margin-top: 20px;
     }
     #activity_large1, #activity_large2, #activity1, #activity2, #activity3, #activity4 {
         width: 100%;
         height: 130px;
-    }
-    #activity img {
-        width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
     }
-
+    #container_activity_frioul, #container_activity_longchamp {
+        align-self: stretch;
+    }
     /* Footer */
 
     footer {
-        margin-top: 840px;
+        margin-top: 810px;
         display: flex;
         flex-direction: column;
     }
@@ -371,29 +383,40 @@
     #popular {
         padding: 0;
         margin: auto;
-        width: 98%;
+        width: 99%;
+        border-radius: 0;
     }   
+    #popular h4 {
+        width: 100%;
+    }
     #title_popular {
         width: 320px;
     }
     .frame_popular {
         width: 95%;
     }
+    .contain_img_popular img {
+        width: 40%;
+    }
+    #popular .ranking {
+        left: 45%;
+    }
     /* Main section (accomodation)*/
 
     #main {
         margin: auto;
-        width: 98%;
+        width: 90%;
         background: none;
-        margin-top: 380px;
+        border: none;
+        margin-top: 450px;
     }
     #main h3 {
         font-size: 22px;
-        margin: 30px auto 20px auto;
+        margin-bottom: 20px;
     }
     #main a {
         width: 98%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     #main figcaption {
         margin-top: 10px;
@@ -410,18 +433,21 @@
         width: 95%;
     }
     #show_more {
-        margin-left: 20px;
+        margin: 10px 0;
     }
     /* Activity section */
 
     #activity { 
         margin: auto;
-        margin-top: 410px;
+        margin-top: 440px;
         width: 90%;
     }
     #activity h4 {
         margin-top: 15px;
         font-size: 20px;
+    }
+    #activity a {
+        margin-bottom: 20px;
     }
     #activity figcaption {
         margin-bottom: 3%;
@@ -435,18 +461,16 @@
     }
     .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
         height: 190px;
-        margin-top: 20px;
     }
     #activity_large1, #activity_large2, #activity1, #activity2, #activity3, #activity4 {
         width: 100%;
         height: 130px;
-    }
-    #activity img {
-        width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
     }
-
+    #container_activity_frioul, #container_activity_longchamp {
+        align-self: stretch;
+    }
     /* Footer */
 
     footer {
@@ -633,16 +657,13 @@
         align-content: center;
         width: 100%;
     }
-    .activity_large_frame, #activity_frame_fort, #activity_frame_frioul, #activity_frame_notredame, #activity_frame_longchamp{
+    .activity_frame{
         height: 190px;
         margin-top: 20px;
     }
     #activity_large1, #activity_large2, #activity1, #activity2, #activity3, #activity4 {
         width: 100%;
         height: 130px;
-    }
-    #activity img {
-        width: 100%;
         object-fit: cover;
         left: 0; bottom: 0; right: 0; top: 0;
         margin: 0;
@@ -673,7 +694,7 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1100px) {
-    h4:not(#activity *) {
+    h4:not(#activity) {
         font-size: 14px;
     }
 }

@@ -15,14 +15,33 @@ a {
 figure {
     margin: 0;
 }
+
+h1 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 h4 {
     font-weight: 700;
     font-size: 18px;
     margin: 0;
 }
+
 /* Header */
 
-header nav {
+header > nav {
     top: 0;
     width: 100%;
     display: flex;
@@ -72,6 +91,7 @@ header ul li a::after{
     right: 50%;
     transform: translateX(50%); 
 }
+
 header ul li a:hover{
     color: #0065FC;
 }
@@ -88,11 +108,6 @@ header ul li a:hover::before, header ul li a:hover::after{
 }
 #input_filter, #stick_filter {
     display: flex;
-}
-h1 {
-    font-size: 22px;
-    font-weight: 800;
-    margin-bottom: 0;
 }
 #search_filters p {
     font-size: 15px;
@@ -129,9 +144,7 @@ h1 {
 #lookforbar input {
     width: 210px;
     height: 42px;
-    border: none;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2; border-width: 1px 0;
 }
 #search_town {
     color: black;
@@ -141,20 +154,14 @@ h1 {
 }
 #filter img {
     height: 20px;
+    width: 20px;
 }
 #filter {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-h2 {
-    font-size: 18px;
-    font-weight: 800;
-    margin-right: 20px;
-}
-#filter img {
-    width: 20px;
-}
+
 .frame {
     display: flex;
     align-items: center;
@@ -235,10 +242,10 @@ main {
     justify-content: space-around;
     margin: 40px auto;
 }
-h3 {
-    font-size: 22px;
+p span {
     font-weight: 700;
 }
+
 /* Popular section */ 
 
 #popular {
@@ -299,10 +306,8 @@ h3 {
     width: 14px;
     position: absolute;
     bottom: 15px;
-    left: 38%;
-    margin-top: 35px;
-    margin-left: 1.25px;
-    margin-right: 1.25px;
+    left: 34%;
+    margin: 35px 1.25px 0 1.25px;
 }
 
 /* Main section (accomodation) */ 
@@ -339,9 +344,7 @@ h3 {
 }
 .section_row a p {
     font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 0 0 10px 10px;
 }
 .contain_img_accomodation img {
     width: 100%; 
@@ -350,27 +353,19 @@ h3 {
     border-radius: 15px 15px 0px 0px;
 }
 #main h4 {
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0 5px 10px;
 }
 .ranking_main {
     display: flex;
     position: absolute;
     width: 14px;
-    margin-left: 1.25px;
-    margin-right: 1.25px;
-    margin-left: 3%;
+    margin: 0 3%;
     bottom: 10px;
 }
 #show_more{
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 3%;
-    color: black;
-    text-decoration: none;
+    margin: 10px 0 15px 3%;
 }
 
 /* Activity section */
@@ -382,8 +377,7 @@ h3 {
     margin-top: 0px;
 }
 #activity h4 {
-    margin-top: 10px;
-    margin-left: 10px;
+  margin: 10px;
 }
 #activity_contain {
     width: 100%;
@@ -395,8 +389,10 @@ h3 {
     justify-content: space-between;
 }
 .activity_large_frame {
-    width: 100%;
     height: 445px;
+}
+.activity_frame {
+    width: 100%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 5px 3px #e2e2e2;
@@ -404,25 +400,12 @@ h3 {
     flex-direction: column;
 }
 #activity_frame_fort {
-    width: 100%;
     height: 235px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px #e2e2e2;
-    display: flex;
-    flex-direction: column;
     grid-column: 2;
     grid-row: 1;
-
 }
 #activity_frame_frioul {
-    width: 100%;
     height: 164px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px #e2e2e2;
-    display: flex;
-    flex-direction: column;
 }
 #container_activity_frioul {
     grid-column: 2;
@@ -430,115 +413,41 @@ h3 {
     align-self: end;
 }
 #activity_frame_notredame {
-    width: 100%;
     height: 193px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px #e2e2e2;
-    display: flex;
-    flex-direction: column;
     grid-column: 4;
     grid-row: 1;
 
 }
 #activity_frame_longchamp {
-    width: 100%;
     height: 209px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px #e2e2e2;
-    display: flex;
-    flex-direction: column;    
 }
+
 #container_activity_longchamp {
     grid-column: 4;
     grid-row: 2;
     align-self: end;
 }
-#activity1 {
+.activity_img {
     position: relative;
     width: 100%;
-    height: 180px;
     border-radius:  20px 20px 0 0;
-    object-fit: cover;
+    object-fit: cover;   
+}
+#activity1 {
+    height: 180px;
 }
 #activity2 {
-    position: relative;
-    width: 100%;
     height: 109px;
-    border-radius:  20px 20px 0 0;
-    object-fit: cover;
 }
 #activity3 {
-    position: relative;
-    width: 100%;
     height: 138px;
-    border-radius:  20px 20px 0 0;
-    object-fit: cover;
 }
 #activity4 {
-    position: relative;
-    width: 100%;
     height: 154px;
-    border-radius:  20px 20px 0 0;
-    object-fit: cover;
 }
-#activity_large1 {
-    position: relative;
-    width: 100%;
+#activity_large1, #activity_large2 {
     height: 390px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
 }
-#activity_large2 {
-    position: relative;
-    width: 100%;
-    height: 390px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-#activity_large1 img {
-    position: absolute;
-    width: 700px;
-    height: auto;
-    left: -60%; bottom: -15%; right: -65%;
-    margin: auto;
-}
-#activity_large2 img {
-    position: absolute;
-    width: 700px;
-    height: auto;
-    left: -65%; bottom: -10%; right: -65%;
-    margin: auto;
-}
-#activity1 img {
-    width: 110%;
-    height: auto;
-    position: absolute;
-    left: -10%; bottom: -10%; top: -10%;
-    margin: auto;
-}
-#activity2 img {
-    width: 112%;
-    height: auto;
-    position: absolute;
-    left: -12%; bottom: -15%; top: -15%;
-    margin: auto;
-}
-#activity3 img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    margin: auto;
-}
-#activity4 img {
-    width: 105%;
-    height: auto;
-    position: absolute;
-    left: -5%; top: -5%; bottom: -5%;
-    margin: auto;
-}
-
 
 /* Footer */
 
@@ -558,8 +467,7 @@ footer a {
     font-size: 15px;
 }
 footer nav {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0 8%;
 }
 footer ul {
     list-style: none;
